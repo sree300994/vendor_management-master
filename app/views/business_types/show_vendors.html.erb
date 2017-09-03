@@ -1,0 +1,5 @@
+<h2>Listing Vendors </h2>
+<% @business_type.vendors.each do |vendor| %>
+	<li><%= vendor.first_name %>
+	<%= link_to 'Edit', edit_vendor_path(vendor) %> </li>
+<% end %>
